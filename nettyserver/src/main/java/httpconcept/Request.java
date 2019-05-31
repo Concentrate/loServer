@@ -49,6 +49,11 @@ public class Request {
 
     }
 
+
+    public String getPath() {
+        return path;
+    }
+
     private void putIp(ChannelHandlerContext context) {
         String reverIp = header.get("X-Forwarded-For");
         if (StringUtil.isNullOrEmpty(reverIp)) {

@@ -12,8 +12,6 @@ import java.util.Map;
 public class NServerConfig {
 
     private int port;
-    private Map<String, Action> actionMap = new HashMap<>();
-    private Map<String, Filter> filterMap = new HashMap<>();
 
 
     public NServerConfig(int port) {
@@ -25,13 +23,12 @@ public class NServerConfig {
 
 
     public NServerConfig addAction(String path, Action action) {
-        actionMap.put(path, action);
         return this;
     }
 
 
     public NServerConfig addFilter(String path, Filter filter) {
-        filterMap.put(path, filter);
+        NServerSetting.setFilter(path,filter);
         return this;
     }
 

@@ -170,6 +170,11 @@ public class Response {
         return this;
     }
 
+
+    public boolean isSent() {
+        return isSent;
+    }
+
     /**
      * without content
      */

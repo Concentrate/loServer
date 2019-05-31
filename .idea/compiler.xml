@@ -11,8 +11,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="loServer" target="1.7" />
-      <module name="nettyserver" target="1.5" />
+      <module name="loServer" target="1.8" />
+      <module name="nettyserver" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
